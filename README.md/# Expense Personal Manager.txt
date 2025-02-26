@@ -1,0 +1,124 @@
+# Expense Personal Manager
+
+## 📌 Overview
+The **Expense Personal Manager** is a web application that helps users track their **income and expenses**, providing insights into financial habits. It is built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js).
+
+---
+
+## 🚀 Features
+- User authentication (Login/Register)
+- Add, edit, and delete expenses and income entries
+- View transaction history
+- Generate reports and track spending trends
+- Responsive design for mobile and desktop
+
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** React.js, React Router, Axios
+- **Backend:** Node.js, Express.js, Mongoose
+- **Database:** MongoDB (NoSQL)
+- **Authentication:** JWT (JSON Web Tokens)
+- **Styling:** CSS, Bootstrap
+
+---
+
+## 📥 Installation Guide
+### 1️⃣ **Clone the Repository**
+```bash
+git clone https://github.com/Kadambari0305/expanse-personal-manager.git
+cd expanse-personal-manager
+```
+
+### 2️⃣ **Install Dependencies**
+#### For Backend
+```bash
+cd server
+npm install
+```
+#### For Frontend
+```bash
+cd client
+npm install
+```
+
+### 3️⃣ **Setup Environment Variables**
+Create a **.env** file in the **server** directory and add:
+```env
+MONGO_URL=your-mongodb-connection-string
+JWT_SECRET=your-secret-key
+```
+
+### 4️⃣ **Run the Application**
+#### Start Backend Server
+```bash
+cd server
+npm start
+```
+#### Start Frontend (React)
+```bash
+cd client
+npm start
+```
+
+The app will be available at **http://localhost:3000**.
+
+---
+
+## 🔧 API Endpoints (Backend)
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/users/register` | Register a new user |
+| POST | `/api/users/login` | Login user and return JWT |
+| GET | `/api/transactions` | Get all transactions |
+| POST | `/api/transactions` | Add a new transaction |
+| DELETE | `/api/transactions/:id` | Delete a transaction |
+
+---
+
+## 📌 Folder Structure
+```
+expanse-personal-manager/
+│── client/          # React Frontend
+│── server/          # Node.js Backend
+│── models/          # Database Models
+│── routes/          # API Routes
+│── controllers/     # Logic for API Endpoints
+│── config/          # Database Configuration
+│── middlewares/     # Authentication Middleware
+│── .env             # Environment Variables
+│── package.json     # Backend Dependencies
+│── README.md        # Project Documentation
+```
+
+---
+
+## 📌 Deployment
+You can deploy this project using **Render, Vercel, Netlify, or Heroku**.
+
+### 🌍 **Frontend Deployment (Vercel/Netlify)**
+1. Build the frontend:
+   ```bash
+   cd client
+   npm run build
+   ```
+2. Deploy to **Vercel**:
+   ```bash
+   vercel --prod
+   ```
+
+### 🚀 **Backend Deployment (Render/Heroku)**
+1. Push the backend to GitHub
+2. Deploy using Render or Heroku
+
+---
+
+## 📞 Contact
+If you have any questions or issues, feel free to reach out!
+
+🔗 **GitHub Repo:** [Expense Personal Manager](https://github.com/Kadambari0305/expanse-personal-manager)
+
+---
+
+⭐ **Give a star if you like this project!** ⭐
+
